@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>شركة تنظيف منازل بالإمارات | عرض خاص</title>
+<meta name="description" content="خدمات تنظيف منازل وفلل ومكاتب وتعقيم ومكافحة حشرات في الإمارات. اتصل الآن أو راسلنا واتساب." />
+<style>
+  :root{
+    --navy:#0b2540;
+    --navy-2:#0f3358;
+    --cyan:#06b6d4;
+    --cyan-2:#22d3ee;
+    --gold:#f5c451;
+    --whatsapp:#25D366;
+    --call:#0ea5e9;
+    --card-radius:22px;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    padding:0;
+    font-family:"Tahoma","Segoe UI",Arial,sans-serif;
+    background: radial-gradient(1200px 800px at 20% -10%, #12406b 0%, #0b2540 45%, #071b33 100%);
+    color:#eaf3fb;
+    min-height:100vh;
+  }
+
+  .page{
+    max-width:460px;
+    margin:0 auto;
+    padding:22px 16px 120px;
+    position:relative;
+  }
+
+  .flyer{
+    background:linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:var(--card-radius);
+    overflow:hidden;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.03) inset;
+    backdrop-filter: blur(6px);
+    animation: fadeUp .7s ease both;
+  }
+
+  @keyframes fadeUp{
+    from{ opacity:0; transform: translateY(18px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+
+  .flyer-header{
+    position:relative;
+    padding:26px 22px 22px;
+    background:
+      radial-gradient(500px 200px at 100% 0%, rgba(6,182,212,0.35), transparent 60%),
+      linear-gradient(135deg, var(--navy-2), var(--navy));
+    text-align:center;
+    overflow:hidden;
+  }
+
+  .flyer-header::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 14px);
+    pointer-events:none;
+  }
+
+  .badge-top{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:rgba(6,182,212,0.16);
+    border:1px solid rgba(34,211,238,0.4);
+    color:var(--cyan-2);
+    font-size:12px;
+    font-weight:700;
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:14px;
+    letter-spacing:.3px;
+  }
+
+  .flyer-title{
+    font-size:26px;
+    font-weight:800;
+    line-height:1.35;
+    margin:0 0 6px;
+    color:#fff;
+    text-shadow:0 2px 12px rgba(0,0,0,.35);
+  }
+
+  .flyer-title span{
+    color:var(--cyan-2);
+  }
+
+  .flyer-city{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:14px;
+    font-weight:600;
+    color:#cfe8f5;
+    background:rgba(255,255,255,0.08);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-top:6px;
+  }
+
+  .flyer-body{
+    padding:22px;
+    background:linear-gradient(180deg, rgba(11,37,64,0.4), rgba(7,27,51,0.65));
+  }
+
+  .price-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    background:linear-gradient(120deg, rgba(245,196,81,0.18), rgba(245,196,81,0.05));
+    border:1px solid rgba(245,196,81,0.45);
+    border-radius:16px;
+    padding:16px 18px;
+    margin-bottom:20px;
+  }
+
+  .price-box .label{
+    font-size:13px;
+    font-weight:700;
+    color:var(--gold);
+    margin-bottom:4px;
+  }
+
+  .price-box .price{
+    font-size:24px;
+    font-weight:800;
+    color:#fff;
+  }
+
+  .price-box .old-price{
+    font-size:13px;
+    color:#9fb4c6;
+    text-decoration:line-through;
+    margin-right:8px;
+  }
+
+  .price-box .offer-tag{
+    background:var(--gold);
+    color:#20242c;
+    font-weight:800;
+    font-size:12px;
+    padding:6px 12px;
+    border-radius:10px;
+    white-space:nowrap;
+  }
+
+  .section-title{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:15px;
+    font-weight:800;
+    color:#fff;
+    margin:22px 0 12px;
+  }
+
+  .section-title::before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--cyan);
+    box-shadow:0 0 0 4px rgba(6,182,212,0.2);
+  }
+
+  .service-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    gap:10px;
+  }
+
+  .service-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:12px;
+    padding:11px 13px;
+    font-size:13.5px;
+    line-height:1.55;
+    color:#e6f0f7;
+  }
+
+  .service-list li .ic{
+    flex:0 0 auto;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:rgba(6,182,212,0.18);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--cyan-2);
+    font-size:13px;
+    margin-top:1px;
+  }
+
+  .features{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .feature{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:14px;
+    padding:14px 10px;
+    text-align:center;
+  }
+
+  .feature .ic{
+    font-size:22px;
+    margin-bottom:6px;
+    display:block;
+  }
+
+  .feature .txt{
+    font-size:12.5px;
+    font-weight:700;
+    color:#eaf3fb;
+    line-height:1.4;
+  }
+
+  .cta-block{
+    margin-top:24px;
+    text-align:center;
+  }
+
+  .cta-phone{
+    font-size:15px;
+    color:#9fd8ea;
+    margin-bottom:12px;
+    font-weight:600;
+  }
+
+  .cta-phone b{
+    color:#fff;
+    font-size:20px;
+    letter-spacing:1px;
+    direction:ltr;
+    display:inline-block;
+  }
+
+  .cta-buttons{
+    display:flex;
+    gap:10px;
+  }
+
+  .btn{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 10px;
+    border-radius:14px;
+    font-weight:800;
+    font-size:14.5px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  }
+
+  .btn:active{
+    transform:scale(.97);
+  }
+
+  .btn-call{
+    background:linear-gradient(135deg, var(--call), #0369a1);
+    color:#fff;
+    box-shadow:0 10px 22px -8px rgba(14,165,233,0.6);
+  }
+
+  .btn-whatsapp{
+    background:linear-gradient(135deg, #34e07a, var(--whatsapp));
+    color:#052e14;
+    box-shadow:0 10px 22px -8px rgba(37,211,102,0.6);
+  }
+
+  .btn:hover{
+    filter:brightness(1.08);
+  }
+
+  .flyer-footer{
+    padding:16px 22px 20px;
+    text-align:center;
+    background:rgba(5,17,32,0.6);
+    border-top:1px solid rgba(255,255,255,0.06);
+  }
+
+  .coverage{
+    font-size:12px;
+    color:#a9c1d4;
+    margin-bottom:10px;
+    line-height:1.7;
+  }
+
+  .coverage b{
+    color:#dff1fa;
+  }
+
+  .designer-credit{
+    font-size:11.5px;
+    color:#8ea9be;
+    margin-bottom:8px;
+  }
+
+  .designer-credit a{
+    color:var(--whatsapp);
+    text-decoration:none;
+    font-weight:800;
+  }
+
+  .designer-credit a:hover{
+    text-decoration:underline;
+  }
+
+  .rights{
+    font-size:11px;
+    color:#5f7c92;
+  }
+
+  /* Floating side circular buttons */
+  .float-actions{
+    position:fixed;
+    left:16px;
+    bottom:22px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    z-index:999;
+  }
+
+  .float-btn{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    color:#fff;
+    box-shadow:0 10px 24px -6px rgba(0,0,0,0.5);
+    animation:pulse 2.4s infinite;
+  }
+
+  .float-btn.whatsapp{
+    background:radial-gradient(circle at 30% 30%, #3ee883, var(--whatsapp));
+  }
+
+  .float-btn.call{
+    background:radial-gradient(circle at 30% 30%, #38c6f4, var(--call));
+    animation-delay:1.2s;
+  }
+
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(255,255,255,0.25), 0 10px 24px -6px rgba(0,0,0,0.5); }
+    70%{ box-shadow:0 0 0 12px rgba(255,255,255,0), 0 10px 24px -6px rgba(0,0,0,0.5); }
+    100%{ box-shadow:0 0 0 0 rgba(255,255,255,0), 0 10px 24px -6px rgba(0,0,0,0.5); }
+  }
+
+  @media (max-width:360px){
+    .flyer-title{ font-size:22px; }
+    .price-box .price{ font-size:20px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="flyer" id="flyer">
+
+      <div class="flyer-header">
+        <span class="badge-top">⚡ استجابة فورية في نفس اليوم</span>
+        <h1 class="flyer-title">تنظيف منازل <span>وفلل ومكاتب</span><br/>وتعقيم ومكافحة حشرات</h1>
+        <span class="flyer-city">📍 خدماتنا داخل الإمارات</span>
+      </div>
+
+      <div class="flyer-body">
+
+        <div class="price-box">
+          <div>
+            <div class="label">عرض هذا الأسبوع</div>
+            <div class="price">تواصل لمعرفة السعر<span class="old-price"></span></div>
+          </div>
+          <span class="offer-tag">خصم خاص</span>
+        </div>
+
+        <div class="section-title">قائمة الخدمات</div>
+        <ul class="service-list">
+          <li><span class="ic">✓</span> تنظيف وتعقيم السجاد والستائر والكنب وجميع أنواع الأثاث مع إزالة البقع</li>
+          <li><span class="ic">✓</span> شفط الأتربة بعمق وترك الأسطح مجففة تمامًا</li>
+          <li><span class="ic">✓</span> تعقيم من الجراثيم والبكتيريا بمواد كيميائية متخصصة ومعتمدة من البلدية</li>
+          <li><span class="ic">✓</span> تنظيف وتعقيم المطابخ والحمامات بالكامل</li>
+          <li><span class="ic">✓</span> مكافحة جميع الحشرات باستخدام الجيل الأمريكي مع رش مائي آمن</li>
+          <li><span class="ic">✓</span> تلميع واجهات المنازل من الداخل والخارج</li>
+        </ul>
+
+        <div class="section-title">مميزاتنا</div>
+        <div class="features">
+          <div class="feature"><span class="ic">🛡️</span><span class="txt">مواد آمنة ومعتمدة</span></div>
+          <div class="feature"><span class="ic">⚡</span><span class="txt">خدمة سريعة وموثوقة</span></div>
+          <div class="feature"><span class="ic">🧴</span><span class="txt">تعقيم بالجيل الأمريكي</span></div>
+          <div class="feature"><span class="ic">📍</span><span class="txt">تغطية جميع الإمارات</span></div>
+        </div>
+
+        <div class="cta-block">
+          <div class="cta-phone">للتواصل والحجز: <b dir="ltr">0563119075</b></div>
+          <div class="cta-buttons">
+            <a class="btn btn-call" href="tel:0563119075">📞 اتصل الآن</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/971563119075" target="_blank" rel="noopener">🟢 واتساب</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flyer-footer">
+        <div class="coverage">
+          نغطي جميع إمارات الدولة: <b>أبوظبي، دبي، الشارقة، العين، رأس الخيمة</b>
+        </div>
+        <div class="designer-credit">
+          تم التصميم بواسطة
+          <a href="https://wa.me/201029095046" target="_blank" rel="noopener">م. نجوى ابراهيم</a>
+        </div>
+        <div class="rights">© <span id="year"></span> جميع الحقوق محفوظة</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="float-actions">
+    <a class="float-btn whatsapp" href="https://wa.me/971563119075" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">🟢</a>
+    <a class="float-btn call" href="tel:0563119075" aria-label="اتصل الآن">📞</a>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Small entrance animation retrigger on load for supported browsers
+    window.addEventListener('DOMContentLoaded', function () {
+      var flyer = document.getElementById('flyer');
+      if (flyer) {
+        flyer.style.opacity = '0';
+        requestAnimationFrame(function () {
+          flyer.style.transition = 'opacity .5s ease';
+          flyer.style.opacity = '1';
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
